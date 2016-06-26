@@ -1,0 +1,313 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+nav {
+    background-color: black;
+    margin: 0 auto!important;
+    padding: 0 auto!important;
+    border-radius: 0!important;
+}
+nav ul {
+    width: 85%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around!important;
+    text-align: center;
+    margin: 0 6.8%!important;
+    padding: 0!important;
+}
+nav li {
+    align-self: stretch;
+    flex: 1 1 14%!important;
+    padding: 0;
+}
+nav a {
+    white-space: nowrap;
+    margin: 0 1em;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    color: white;
+}
+nav li:hover {
+    background-color: #26eb26;
+}
+nav a:hover {
+    color: black;
+}
+.dropdown {
+    padding-left: 11%;
+    background-color: #6ad46a;
+}
+.dropdown button, .dropdown button:hover, .dropdown button:visited, .dropdown button:focus {
+    text-decoration: none;
+    color: black;
+}
+.dropdown ul {
+    margin-left: 11%;
+}
+header {
+    width: 79%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    max-height: 5em;
+}
+header .input-group {
+    width: 15em;
+    height: 2em;
+    margin-right: 2em;
+}
+.carousel {
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+}
+.carousel img {
+    margin: 0 auto;
+    padding: 0;
+}
+.carousel-caption {
+    color: black;
+    height: 90%;
+    text-align: left;
+    left: 11.8%!important;
+    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-shadow: .1em .1em 0 white;
+}
+.carousel-caption * {
+    align-self: flex-start;
+    flex: 0 1 20%;
+}
+.carousel h3, .carousel h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: .2em 0;
+    padding: 0;
+}
+.carousel h3 {
+    color: #0b9f0b;
+}
+.btn-primary, .btn-primary:visited {
+    background-color: #0b9f0b;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #26eb26;
+}
+.carousel ol li {
+    width: 1.2em;
+    height: 1.2em;
+    border: solid .1em #0b9f0b;
+    box-shadow: 0 0 0 .1em white;
+}
+.carousel ol .active {
+    width: 1.25em;
+    height: 1.25em;
+    border: none;
+    background-color: #26eb26;
+}
+.carousel-control, .carousel-control:hover, .carousel-control:visited, .carousel-control:focus {
+    color: #0b9f0b;
+}
+.adds {
+    width: 75%;
+    background-color: #7ff47f;
+    margin: 0 12.5%;
+    padding-bottom: 2.5em;
+}
+article {
+    padding: 1em 0;
+}
+article * {
+    clear: both;
+    margin-left: -.2em;
+}
+article .glyphicon {
+    margin-right: .3em;
+    font-size: 5em;
+    float: left;
+}
+article span:last-of-type {
+    display: inline;
+    font-size: .7em;
+}
+article h5 {
+    margin-left: -1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contenidos {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 77.2%;
+    margin: 0 11.4%;
+    padding: 0 1.1%;
+}
+.contenidos article {
+    width: 34%;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: stretch;
+    justify-content: flex-start;
+}
+.contenidos article * {
+    flex: 1 1 100%;
+    align-self: flex-start;
+}
+.contenidos article h5 {
+    margin: 0 0 1em -.2em;
+}
+.contenidos article .btn-primary {
+    max-height: 3em;
+}
+.contenidos article:hover {
+    background-color: #6ad46a;
+    color: white;
+}
+.noticia::first-line {
+    font-weight: bold;
+}
+.fecha {
+    font-style: italic;
+}
+.contenidos .btn-link, .contenidos .btn-link:visited {
+    margin-left: -1em;
+    border: none;
+}
+footer {
+    padding: 1em 10.4%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7ff47f;
+}
+footer span:first-child {
+    flex: 0 auto 30%;
+    align-self: center;
+    margin-left: 2em;
+}
+footer span:last-child {
+    height: 2.3em;
+    flex: 0 auto 20%;
+    align-self: center;
+    margin-right: 2em;
+}
+footer span:last-child a {
+    display: inline-block;
+}
+footer span:first-child a {
+    border-left: solid 1px black;
+    margin-left: .3em;
+}
+footer span:first-child a:before {
+    content: "\00a0" ;
+}
+@media (max-width: 992px) {
+    .carousel-caption h3, .carousel-caption h4 {
+        flex: 0 0 40%;
+    }
+    .carousel-caption h3 {
+        padding-top: 1.5em;
+        margin-top: -1.5em;
+    }
+    .carousel-caption h4 {
+        margin-top: -1em;
+    }
+    .contenidos article {
+        flex-flow: row wrap;
+    }
+    .contenidos article * {
+        flex: 0 0 100%;
+        margin: .5em;
+        align-self: center;
+    }
+    .contenidos article .btn-primary {
+        align-self: flex-end;
+        flex: 1 1 40%;
+    }
+    .contenidos .btn-link {
+        margin-left: -.3em;
+    }
+    .contenidos article h5 {
+        flex: 1 0 100%;
+    }
+    section div {
+        margin: 0!important;
+        width: 100%!important;
+    }
+    .contenidos article:nth-child(2) div {
+        flex: 0 1 100%!important;
+    }
+    footer {
+        width: 100%;
+        padding: 1em 0;
+    }
+}
+@media (max-width: 767px) {
+    nav li {
+        flex: 1 1 50%!important;
+        margin: 0;
+    }
+    .contenidos {
+        flex-flow: column nowrap;
+    }
+    .contenidos article {
+        width: 100%;
+    }
+    .contenidos article * {
+        margin: 1em;
+        align-self: flex-start;
+        flex: 1 1 95%;
+    }
+    article .glyphicon {
+        margin: 0 .3em;
+    }
+    .contenidos .btn-link {
+        margin-left: .2em;
+    }
+}
+@media (max-width: 570px) {
+    header {
+        width: 100%!important;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0 15%;
+    }
+    header * {
+        align-self: center;
+        flex: 0 1 46%;
+}
+    .contenidos article * {
+        margin: 1em;
+        align-self: flex-start;
+        flex: 1 1 100%;
+    }
+    .carousel {
+        display: none;
+    }
+    footer {
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
